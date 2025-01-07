@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles1.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <form method="post">
+        <!-- name-->
+        <lable for="name">Name</lable>
+        <input type="Text" id="name" placeholder="Name" required><br>
+        <!-- email-->
+        <lable for="email">Email</lable>
+        <input type="email" id="email" placeholder="Email" required ><br>
+        <!--gender-->
+        <label>Gender</label>
+        <lable for="Male">Male</lable>
+        <input type="radio" id="Male"required name="gender"><br>
+        <lable for="female">female</lable>
+        <input type="radio" id="female"required name="gender"><br>
+        <!-- Laptop Brands-->
+        <label for="laptop">Laptop Brands</label><br>
+        <select type="select" id="laptop" placeholder="--Please choose an option--" required>
+            <option value="" disabled selected >--Please choose an option--</option>
+            <option value="Dell">Dell</option>
+            <option value="HP">HP</option>
+            <option value="Lenovo">Asus</option>
+            <option value="Apple">Apple</option>
+        </select><br>
+        <!--age-->
+        <lable for="age">Age</lable>
+        <input type="Number" id="age" placeholder="Age" required><br>
+        <!--DOB-->
+        <lable for="dob">DOB</lable>
+        <input type="Date" id="dob" required ><br>
+        <!--Password-->
+        <lable for="password">Password</lable>
+        <input type="Password" id="password" placeholder="Password" required ><br><BR>
+        <!--Portfolio URL-->
+        <lable for="portfolio">Portfolio URL</lable>
+        <input type="url" id="portfolio" placeholder="Portfolio URL" required ><br><BR>
 
+        <!--I agree to the TOS-->
+        <button type="submit">Submit</button>
+        
+    </form>
 </body>
-
 </html>
