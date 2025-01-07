@@ -8,43 +8,49 @@
 </head>
 <body>
     <form method="post">
-        <!-- name-->
-        <lable for="name">Name</lable>
-        <input type="Text" id="name" placeholder="Name" required><br>
-        <!-- email-->
-        <lable for="email">Email</lable>
-        <input type="email" id="email" placeholder="Email" required ><br>
-        <!--gender-->
-        <label>Gender</label>
-        <lable for="Male">Male</lable>
-        <input type="radio" id="Male"required name="gender"><br>
-        <lable for="female">female</lable>
-        <input type="radio" id="female"required name="gender"><br>
+        <!-- Name-->
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Name" required><br>
+
+        <!-- Email-->
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" required><br>
+
+        <!-- Gender-->
+        <label>Gender</label><br>
+        <label for="Male">Male</label>
+        <input type="radio" id="Male" name="gender" required><br>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" required><br>
+
         <!-- Laptop Brands-->
         <label for="laptop">Laptop Brands</label><br>
-        <select type="select" id="laptop" placeholder="--Please choose an option--" required>
-            <option value="" disabled selected >--Please choose an option--</option>
+        <select id="laptop" required>
+            <option value="" disabled selected>--Please choose an option--</option>
             <option value="Dell">Dell</option>
             <option value="HP">HP</option>
             <option value="Lenovo">Asus</option>
             <option value="Apple">Apple</option>
         </select><br>
-        <!--age-->
-        <lable for="age">Age</lable>
-        <input type="Number" id="age" placeholder="Age" required><br>
-        <!--DOB-->
-        <lable for="dob">DOB</lable>
-        <input type="Date" id="dob" required ><br>
-        <!--Password-->
-        <lable for="password">Password</lable>
-        <input type="Password" id="password" placeholder="Password" required ><br><BR>
-        <!--Portfolio URL-->
-        <lable for="portfolio">Portfolio URL</lable>
-        <input type="url" id="portfolio" placeholder="Portfolio URL" required ><br><BR>
 
-        <!--I agree to the TOS-->
+        <!-- Age-->
+        <label for="age">Age</label>
+        <input type="number" min="1" max="100" id="age" placeholder="Age" required><br>
+
+        <!-- DOB-->
+        <label for="dob">DOB</label>
+        <input type="date" id="dob" required><br>
+
+        <!-- Password-->
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required><br><br>
+
+        <!-- Portfolio URL-->
+        <label for="portfolio">Portfolio URL</label>
+        <input type="url" id="portfolio" placeholder="Portfolio URL" required><br><br>
+
+        <!-- Submit Button-->
         <button type="submit">Submit</button>
-        
     </form>
 </body>
 </html>
